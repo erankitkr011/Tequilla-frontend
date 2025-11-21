@@ -1,0 +1,254 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 50%, #e8f4ff 100%);
+  padding-top: 120px;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.x-shape {
+  position: absolute;
+  right: -10%;
+  top: 0;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.hero-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  position: relative;
+  min-height: calc(100vh - 200px);
+}
+
+.nav-arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.nav-arrow img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.1);
+}
+
+.left-arrow {
+  margin-right: 2rem;
+}
+
+.right-arrow {
+  margin-left: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 300;
+  color: #0156E6;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  font-size: 24px;
+  font-weight: 300;
+  color: #0156E6;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.learn-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border: 2px solid #ff8c00;
+  color: #ff8c00;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.1em;
+}
+
+.arrow-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff8c00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #ff8c00;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.3);
+}
+
+.learn-more-btn:hover .arrow-circle {
+  background: white;
+  color: #ff8c00;
+  border-color: white;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-people {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+}
+
+.graph-overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.graph-overlay img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.rectangle-decoration {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 4;
+}
+
+.rectangle-decoration img {
+  width: 80px;
+  height: auto;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 50px;
+  height: 8px;
+  background: #cbd5e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #ff8c00;
+  width: 80px;
+}
+
+.dot:hover {
+  background: #ff8c00;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+  }
+
+  .hero-content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+
+  .nav-arrow {
+    display: none;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+}
