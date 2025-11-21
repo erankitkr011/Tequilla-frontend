@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
+import Navbar from '../layout/Navbar';
 import businessPeople from '../../assets/images/business-man-woman.svg';
 import leftArrow from '../../assets/images/leftarrow.svg';
 import rightArrow from '../../assets/images/rightarrow.svg';
@@ -11,6 +12,8 @@ import xShape from '../../assets/images/x.svg';
 const HeroSection = () => {
   return (
     <section className="hero-section">
+      <Navbar />
+      
       <div className="hero-background">
         <img src={xShape} alt="" className="x-shape" />
       </div>
@@ -21,10 +24,9 @@ const HeroSection = () => {
         </button>
 
         <div className="hero-content">
-          <div className="hero-text">
+          <div className="hero-left">
             <h1 className="hero-title">
-              Leading Provider of <br />
-              Open Data Solutions
+              Leading Provider of Open Data Solutions
             </h1>
             <p className="hero-description">
               Supporting clients through digital <br />
@@ -37,13 +39,15 @@ const HeroSection = () => {
             </button>
           </div>
 
-          <div className="hero-image">
-            <img src={businessPeople} alt="Business professionals" className="business-people" />
-            <div className="graph-overlay">
-              <img src={graph} alt="Growth chart" />
-            </div>
-            <div className="rectangle-decoration">
-              <img src={rectangleLine} alt="" />
+          <div className="hero-right">
+            <div className="hero-image">
+              <img src={businessPeople} alt="Business professionals" className="business-people" />
+              <div className="graph-overlay">
+                <img src={graph} alt="Growth chart" />
+              </div>
+              <div className="rectangle-decoration">
+                <img src={rectangleLine} alt="" />
+              </div>
             </div>
           </div>
         </div>
