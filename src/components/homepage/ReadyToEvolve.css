@@ -1,0 +1,171 @@
+.ready-section {
+  background: linear-gradient(90deg, #023567 0%, #00488F 100%);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ready-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ready-x-shape {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: auto;
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+.ready-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.ready-content {
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.ready-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.ready-contact {
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contact-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-section {
+  margin-bottom: 2.5rem;
+}
+
+.footer-heading {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.15em;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-nav a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ff8c00;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ready-container {
+    padding: 0 3rem;
+  }
+
+  .ready-title {
+    font-size: 64px;
+  }
+
+  .ready-x-shape {
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ready-container {
+    padding: 0 2rem;
+  }
+
+  .ready-section {
+    padding: 4rem 0;
+  }
+
+  .ready-title {
+    font-size: 48px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .ready-x-shape {
+    opacity: 0.1;
+    width: 350px;
+  }
+}
