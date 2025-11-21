@@ -3,19 +3,16 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
-  /* removed shadow to eliminate separation line between navbar and page */
-  box-shadow: none;
-  border-bottom: none;
-  z-index: 1000;
+  z-index: 1;
   padding: 1rem 0;
+  margin-left: 110px;
 }
 
 .navbar-container {
   max-width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
   padding: 0 5rem;
@@ -29,10 +26,11 @@
 .navbar-menu {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
   align-items: center;
+  margin-left: 100px;
 }
 
 .navbar-item {
@@ -41,8 +39,8 @@
 
 .navbar-item a {
   text-decoration: none;
-  color: #0156E6;
-  font-size: 18px;
+  color: #02568A;
+  font-size: 15px;
   font-weight: 300;
   transition: all 0.3s ease;
   padding-bottom: 5px;
@@ -54,7 +52,7 @@
 }
 
 .navbar-item.active a {
-  color: #0156E6;
+  color: #01558E;
   font-weight: 800;
   border-bottom: 3px solid #ff8c00;
 }
@@ -69,6 +67,7 @@
   border: none;
   padding: 12px 30px;
   border-radius: 30px;
+  margin-right: 180px;
   font-size: 18px;
   font-weight: 800;
   cursor: pointer;
