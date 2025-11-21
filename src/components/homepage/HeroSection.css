@@ -23,7 +23,7 @@
   height: 100%;
   width: auto;
   object-fit: contain;
-
+  filter: brightness(0) saturate(100%) invert(10%) sepia(80%) saturate(3000%) hue-rotate(200deg) brightness(95%) contrast(100%);
 }
 
 .hero-container {
