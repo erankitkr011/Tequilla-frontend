@@ -63,10 +63,10 @@
 .solution-card {
   background: transparent;
   border-radius: 0;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   box-shadow: none;
   transition: all 0.3s ease;
-  text-align: center;
+  text-align: left;
 }
 
 .solution-card:hover {
@@ -74,12 +74,12 @@
 }
 
 .solution-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1.5rem;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 1.5rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .solution-icon img {
@@ -89,17 +89,19 @@
 }
 
 .solution-name {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   color: #F0750F;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .solution-description {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #013C61;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* Responsive Design */
